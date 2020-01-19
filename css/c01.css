@@ -1,0 +1,179 @@
+/* CSS for adding content example */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+body { 
+    font-family: "Courier New", Courier, monospace;
+    background: url("../images/constructive-backdrop.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;}
+
+h1, h3, p {
+    float: left;
+    clear: left;
+    width: 320px;
+    background-color: #fff;
+    color: #5a514c;
+    text-align: center;}
+
+
+h1 {
+    margin: 50px 0 0 50px;
+    height: 175px;
+    background-image: url("../images/constructive-logo.gif");
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    border-top: 1px solid #bcbdc0;
+    border-left: 1px solid #bcbdc0;
+    border-right: 1px solid #bcbdc0;}
+
+h3 {
+    margin: 0 0 0 50px;
+    padding: 25px 0 0 0;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 0.80em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    border-left: 1px solid #bcbdc0;
+    border-right: 1px solid #bcbdc0;}
+
+p {
+    margin: 0 0 0 50px;
+    padding: 30px 0 25px 0;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #bcbdc0;
+    border-bottom: 1px solid #bcbdc0;
+    border-left: 1px solid #bcbdc0;}
+
+/* Border under box when you move script in the last example */
+p + script + h3 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bcbdc0;}
+
+/* Fix for full-screen background image: Chrome on Android */
+html{
+    height:100%;
+    min-height:100%;}
+body{
+    min-height:100%;}
+
+var today = Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+    greeting = 'Good evening!';
+} else if (hourNow > 12) {
+    greeting = 'Good afternoon!';
+} else if (hourNow>0) {
+    greeting = 'Good morning!';
+} else {
+    greeting = 'Welcome!';
+}
+
+document.write('<h3>' + greeting + '</h3');
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;cd
+  }
+
+  * {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
