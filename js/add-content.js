@@ -13,3 +13,13 @@ if (hourNow > 18) {
 }
 
 document.write('<h3>' + greeting + '</h3');
+
+    // Program to print a sentence 10 times
+    class Loop {
+        public static void main(String[] args) {
+           
+           for (int i = 1; i <= 10; ++i) {
+              document.write("Snow Day " + i);
+           }
+        }
+     }
